@@ -41,8 +41,7 @@ public class MainActivity extends Activity {
             startActivity(loginIntent);
         }
 
-        System.out.println("AAAAAAAAAAAA1A");
-        System.out.println(AccessToken.getCurrentAccessToken());
+        Log.d("log", "AccessToken -> "+AccessToken.getCurrentAccessToken());
 
         // https://www.facebook.com/events//
         GraphRequest request = GraphRequest.newGraphPathRequest(
